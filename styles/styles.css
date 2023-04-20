@@ -13,3 +13,12 @@ body{
 .container{
     margin-top: 100px;
 }
+
+.font_bold{
+    font-family: 'Poiret One';
+    font-weight: bold;
+}
+
+.font{
+    font-family: 'Poiret One';
+}
