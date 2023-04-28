@@ -16,6 +16,17 @@ h1 {
     font-size: 30
 }
 
+.font_heavy_small{
+    font-family: 'Passion One';
+    font-size: 20
+}
+
+.font_heavy_small:hover{
+    font-family: 'Passion One';
+    font-size: 20;
+    opacity: 0.5;
+}
+
 .font_caption{
     font-family: 'Poiret One';
     font-weight: bold;
@@ -78,4 +89,14 @@ footer{
 
 .remove_underline{
     text-decoration: none;
+}
+
+.button-background{
+   background-color: #D9C82C;
+}
+
+#email_animation{
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-duration: 6s;
 }
