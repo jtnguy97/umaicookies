@@ -13,12 +13,26 @@ h1 {
 
 .font_heavy{
     font-family: 'Passion One';
-    font-size: 30
+    font-size: 28;
+    color:  #007c80
+}
+
+
+.font_heavy_howto{
+    font-family: 'Passion One';
+    font-size: 20;
+    color:  #007c80
 }
 
 .font_heavy_small{
     font-family: 'Passion One';
-    font-size: 20
+    font-size: 18
+}
+
+.font_bold_direction{
+    font-family: 'Poiret One';
+    font-size: 25;
+    font-weight: bold;
 }
 
 .font_heavy_small:hover{
@@ -31,6 +45,14 @@ h1 {
     font-family: 'Poiret One';
     font-weight: bold;
     font-size: 40;
+    
+}
+
+.footer_font{
+    font-family: 'Poiret One';
+    font-weight: bold;
+    font-size: 30;
+    color: white
 }
 
 .font{
@@ -60,7 +82,6 @@ h1 {
 }
 
 
-
 .navbar .nav-item:hover .dropdown-menu{
     display: block;
 }
@@ -70,12 +91,8 @@ h1 {
 }
 
 footer{
-    background-color: black;
-    padding: 20px;
-}
-footer{
-    background-color: black;
-    padding: 20px;
+    background-color: #007c80;
+    padding: 35px;
 }
 
 .footer_font{
@@ -100,3 +117,8 @@ footer{
     animation-delay: 1s;
     animation-duration: 6s;
 }
+  
+  .small-container{
+    margin: auto;
+	width: 50%;
+  }
