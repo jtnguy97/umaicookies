@@ -1,0 +1,66 @@
+<h1 style = "font: 40;">Hi <%= name %> </h1>
+<form action="/logout" method="POST">
+<button type="submit">Logout</button>
+</form>
+
+
+
+<html>
+    <head>
+        <link rel = "icon" href="../assets/favicon.ico">
+        <title> umai cookies </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href = "../styles/styles.css" rel = "stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+        <meta charset = "utf-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- <link rel = "stylesheet" href = "styles/bootstrap.min.css">
+        <link rel = "stylesheet" href = "styles/bootstrap-icons.css">
+       -->
+        
+    </head>
+
+    <body>
+        <section id = "index">
+        <nav class = "navbar fixed-top navbar-expand-md navbar-light bg-light bg-transparent container-fluid">
+            <a class = "navbar-brand font_bold" href = "#index"><img class = "logo" src = "assets/umai_logo_trans.png" width="125x" height="70px"></a>
+            
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-options"><i class="navbar-toggler-icon"></i>
+                </button>
+        
+                 <div class="collapse navbar-collapse" id="navbar-options">
+
+                    <ul class="navbar-nav nav nav-pills ms-auto">
+                        <li class="nav-item"><a style = "display: inline;" class="nav-link font_bold text-dark highlight"  href="#cookies"> Cookies </a></li>
+                        <li class="nav-item"><a style = "display: inline;"class = "nav-link font_bold text-dark highlight" href="#lactation"> Lactation </a></li>   
+                        <li class="nav-item"><a style = "display: inline;"class="nav-link font_bold text-dark highlight" href="#order"> Order </a></li>  
+                        <li class="nav-item"><a style = "display: inline;" class ="nav-link font_bold text-dark highlight" href="#about"> About </a></li>      
+                        <li class="nav-item dropdown">
+                            <a style = "display: inline;"class="nav-link font_bold text-dark highlight dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id = "dropdown-menu" href="#"> More </a>
+                    
+                            <ul class="dropdown-menu dropdown-menu-right end-0" aria-labelledby="dropdownMenuLink">
+                                <li class = ><a class="dropdown-item highlight" href="#location">LOCATION</a></li>
+                                <li><a class="dropdown-item highlight" href="#contact">CONTACT</a></li>
+                                <li><a class="dropdown-item highlight" href="#faq">FAQ</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a style = "display: inline;"class="nav-link font_bold text-dark highlight dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id = "dropdown-menu" href="#"><i class="fa fa-fw fa-user"></i></a>
+                            <ul class="dropdown-menu dropdown-menu-right end-0" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item highlight" href = "http://localhost:4000/login">SIGN IN</a></li>
+                                <li><a class="dropdown-item highlight" href = "http://localhost:4000/register">SIGN UP</a></li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+
+                    </div>
+                </nav>
+        </section>
+    </body>
+</html>

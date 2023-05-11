@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <meta name = "viewport" content = "width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-       <!-- <link rel = "stylesheet" href = "styles/bootstrap.min.css">
+        <!-- <link rel = "stylesheet" href = "styles/bootstrap.min.css">
         <link rel = "stylesheet" href = "styles/bootstrap-icons.css">
        -->
         
@@ -45,10 +45,19 @@
                         <li class="nav-item dropdown">
                             <a style = "display: inline;"class="nav-link font_bold text-dark highlight dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id = "dropdown-menu" href="#"><i class="fa fa-fw fa-user"></i></a>
                             <ul class="dropdown-menu dropdown-menu-right end-0" aria-labelledby="dropdownMenuLink">
-                                <li><a class="dropdown-item highlight" href = "views/login.ejs">SIGN IN</a></li>
-                                <li><a class="dropdown-item highlight" href = "views/register.ejs">SIGN UP</a></li>
+                                <li><a class="dropdown-item highlight" href = "http://localhost:4000/login">SIGN IN</a></li>
+                                <li><a class="dropdown-item highlight" href = "http://localhost:4000/register">SIGN UP</a></li>
                             </ul>
                         </li>
+
+                        <li class="nav-item dropdown">
+                            <a style = "display: inline;"class="nav-link font_bold text-dark highlight dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id = "dropdown-menu" href="#"> <i class="bi bi-cart"></i></a>
+                            <ul class="dropdown-menu dropdown-menu-right end-0" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item highlight" href = "http://localhost:4000/login">SIGN IN</a></li>
+                                <li><a class="dropdown-item highlight" href = "http://localhost:4000/register">SIGN UP</a></li>
+                            </ul>
+                        </li>
+                       
                         
                     </ul>
 
@@ -58,13 +67,13 @@
     <!--sections for the rest of the navbar indexes-->
 
     <div class = "text-center"> <img class = "zoom" style = "max-width: 100%;" src = "assets/umai_logo_trans.png" width="1000" height="400"> </div>
-    <div class = "text-center font_caption container-sm ">
-    
+    <div class = "text-center font_caption container-sm" id = "text">
         <br>
         Providing homemade cookies and lactation cookies to the New Orleans and Baton Rouge metro areas! Explore our site!
     </div>
+    
    
-    <section id = "cookies" class = "text-center">    
+    <section id = "cookies" class = "text-center" id = "text">    
         <br><br><br><br>
         <div class = "container-sm"> 
             <h1 class = "font_bold">Homemade Cookies</h1> <br>
@@ -228,7 +237,7 @@
                     <div class = "form-group mb-3">
                         <textarea class = "form-control " rows = "6" id="message" placeholder="message">  </textarea>
                     </div>
-                    <button onclick='document.getElementById("submit_script").innerHTML = "submitted!"'style = "border-radius: 30%; border: none; padding: 10 " class = "font_heavy_small button float-end button-background" id = "submit"> <span> submit </span> </button>
+                    <button onclick='document.getElementById("submit_script").innerHTML = "submitted!"'style = "border-radius: 30%; border: none; padding: 10" class = "font_heavy_small button float-end button-background" id = "submit"> <span> submit </span> </button>
                     <p id = "submit_script" class = "font_heavy"></p>
                 </div>
             </div>
@@ -348,9 +357,6 @@
     </div>
     </small>
 </footer>
-
-    <!--footer containing locations available, hours availability, social media buttons, info (events, FAQs, resources) -->
-       <!-- <script src = "scripts/bootstrap.bundle.min.js"></script> -->
 
        <script src = "scripts/animate.js"></script>
        <script src = https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js></script> 
