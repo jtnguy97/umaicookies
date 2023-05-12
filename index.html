@@ -39,6 +39,7 @@
                                 <li class = ><a class="dropdown-item highlight" href="#location">LOCATION</a></li>
                                 <li><a class="dropdown-item highlight" href="#contact">CONTACT</a></li>
                                 <li><a class="dropdown-item highlight" href="#faq">FAQ</a></li>
+                                <li><a class="dropdown-item highlight" href="#donation">DONATION</a></li>
                             </ul>
                         </li>
 
@@ -229,12 +230,12 @@
                 <div class = "form">  
                     <br>
                     <div class = "mb-3">
-                        <input  class = "form-control" type = "text" id = "name" placeholder="full name">
+                        <input  class = "form-control inputfield1" type = "text" id = "name" placeholder="full name">
                     </div>
                     <div class = "mb-3">
-                        <input class = "form-control" type = "email" id = "email" placeholder="email">
+                        <input class = "form-control inputfield2" type = "email" id = "email" placeholder="email">
                     </div>
-                    <div class = "form-group mb-3">
+                    <div class = "form-group mb-3 inputfield3">
                         <textarea class = "form-control " rows = "6" id="message" placeholder="message">  </textarea>
                     </div>
                     <button onclick='document.getElementById("submit_script").innerHTML = "submitted!"'style = "border-radius: 30%; border: none; padding: 10" class = "font_heavy_small button float-end button-background" id = "submit"> <span> submit </span> </button>
@@ -317,8 +318,39 @@
                     <h6 class = "font_bold">Yes! Other flavors are currently being tested, and will be available when ready!</h6>
                     </div>
             </div>
-
+<br><br><br><br>
     </section>
+
+    <section id = "donation">
+        <br><br><br> <br>
+            <h1 class = "font_bold container-sm" style = "text-align: left; padding-left: 50;">Donate to us!</h1>
+            <h4 class = "font_bold container-sm" style = "font-size: 20; padding-left: 50;">All donations will go toward funding branding, equipment upgrades to increase production and efficiency, and day-to-day operation costs!</h4>
+            <br>
+            <h3 class = "font_heavy_howto container-sm" style = "font-size: 20; padding-left: 50;">Donation amount: </h3>
+        <div class = "font_heavy container-sm" style = "text-align: left; padding-left: 50;">
+            <button class = "button-background button_donation" style = "border-radius: 30%; border: none; padding: 10">$10.00</button>
+            <button class = "button-background button_donation" style = "border-radius: 30%; border: none; padding: 10">$20.00</button>
+            <button class = "button-background button_donation" style = "border-radius: 30%; border: none; padding: 10">$50.00</button>
+            <button class = "button-background button_donation" style = "border-radius: 30%; border: none; padding: 10">$100.00</button>
+        </div> 
+        <br>
+            <h3 class = "font_heavy_howto container-sm" style = "font-size: 16; padding-left: 50;">Send a note with your donation!<br> <div class = "submit-form container col-4 font_bold">
+                <div class = "form">  
+                    <br>
+                    <div class = "form-group donation_message">
+                        <textarea class = "form-control" style = "text-align: left;" rows = "6" id="message" placeholder="message">  </textarea>
+                    </div>
+                    <br>
+                    <button onclick='document.getElementById("submit_script").innerHTML = "message saved"'style = "border-radius: 30%; border: none; padding: 10" class = "font_heavy_small button float-end button-background" id = "submit_donation_message"><span> donate </span> </button>
+                    <br><br>
+                    <p id = "submit_script" class = "font_heavy"></p>
+                    <br>
+                </div>
+            </div>
+            
+    </section>
+    <hr>
+    <p>payment images here</p>
 
 <!--update footer, add social media icons-->
     <br><br><br>
@@ -357,7 +389,8 @@
     </div>
     </small>
 </footer>
-
+       <script src = "scripts/button_donation.js"></script>
+       <script src = "scripts/disable_submit_button_form.js"></script>
        <script src = "scripts/animate.js"></script>
        <script src = https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js></script> 
        <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

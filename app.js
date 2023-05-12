@@ -9,6 +9,8 @@ const flash = require('express-flash');
 
 const userRoutes = require('./routes/user-routes');
 var assetsDir = require('path').join(__dirname, '/assets');
+var stylesDir = require('path').join(__dirname, '/styles');
+var scriptsDir = require('path').join(__dirname, '/scripts');
 
 if (process.env.NODE_ENV !== 'production' ){
     require('dotenv').config()
@@ -26,8 +28,10 @@ function setupApp(){
     app.use(flash());
     app.use(passport.initialize());
     app.use(passport.session()); 
-    app.use(express.static(assetsDir));
-   
+    app.use('/assets', express.static(assetsDir));
+    app.use('/styles', express.static(stylesDir));
+    app.use('/scripts', express.static(scriptsDir));
+    
     app.use('/', userRoutes);
 }
 
