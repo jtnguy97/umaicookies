@@ -152,3 +152,11 @@ hr{
     width:90%;
     margin:0 auto;
 }
+
+
+
+.form-label{
+    width: 200px;
+    display: inline-block;
+
+}

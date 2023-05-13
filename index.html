@@ -11,16 +11,14 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <meta name = "viewport" content = "width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- <link rel = "stylesheet" href = "styles/bootstrap.min.css">
-        <link rel = "stylesheet" href = "styles/bootstrap-icons.css">
-       -->
-        
+        <link rel="stylesheet" type="text/css" href="dcodes/payment_icons/dc_payment_icons.css" />
+        <link rel="stylesheet" type="text/css" href="http://cdn.dcodes.net/2/payment_icons/dc_payment_icons.css" />
     </head>
 
     <body>
         <section id = "index">
         <nav class = "navbar fixed-top navbar-expand-md navbar-light bg-light bg-transparent container-fluid">
-            <a class = "navbar-brand font_bold" href = "#index"><img class = "logo" src = "assets/umai_logo_trans.png" width="125x" height="70px"></a>
+            <a class = "navbar-brand font_bold" href = "#index"><img class = "logo" src = "assets/umai_logo_trans.png" width="155x" height="70px"></a>
             
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-options"><i class="navbar-toggler-icon"></i>
                 </button>
@@ -54,8 +52,7 @@
                         <li class="nav-item dropdown">
                             <a style = "display: inline;"class="nav-link font_bold text-dark highlight dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id = "dropdown-menu" href="#"> <i class="bi bi-cart"></i></a>
                             <ul class="dropdown-menu dropdown-menu-right end-0" aria-labelledby="dropdownMenuLink">
-                                <li><a class="dropdown-item highlight" href = "http://localhost:4000/login">SIGN IN</a></li>
-                                <li><a class="dropdown-item highlight" href = "http://localhost:4000/register">SIGN UP</a></li>
+                                <li><a class="dropdown-item highlight" href = "#">YOUR CART</a></li>
                             </ul>
                         </li>
                        
@@ -66,13 +63,12 @@
                 </nav>
         </section>
     <!--sections for the rest of the navbar indexes-->
-
+<br>
     <div class = "text-center"> <img class = "zoom" style = "max-width: 100%;" src = "assets/umai_logo_trans.png" width="1000" height="400"> </div>
     <div class = "text-center font_caption container-sm" id = "text">
         <br>
         Providing homemade cookies and lactation cookies to the New Orleans and Baton Rouge metro areas! Explore our site!
     </div>
-    
    
     <section id = "cookies" class = "text-center" id = "text">    
         <br><br><br><br>
@@ -325,7 +321,7 @@
         <br><br><br> <br>
             <h1 class = "font_bold container-sm" style = "text-align: left; padding-left: 50;">Donate to us!</h1>
             <h4 class = "font_bold container-sm" style = "font-size: 20; padding-left: 50;">All donations will go toward funding branding, equipment upgrades to increase production and efficiency, and day-to-day operation costs!</h4>
-            <br>
+            <br><br>
             <h3 class = "font_heavy_howto container-sm" style = "font-size: 20; padding-left: 50;">Donation amount: </h3>
         <div class = "font_heavy container-sm" style = "text-align: left; padding-left: 50;">
             <button class = "button-background button_donation" style = "border-radius: 30%; border: none; padding: 10">$10.00</button>
@@ -333,27 +329,25 @@
             <button class = "button-background button_donation" style = "border-radius: 30%; border: none; padding: 10">$50.00</button>
             <button class = "button-background button_donation" style = "border-radius: 30%; border: none; padding: 10">$100.00</button>
         </div> 
-        <br>
-            <h3 class = "font_heavy_howto container-sm" style = "font-size: 16; padding-left: 50;">Send a note with your donation!<br> <div class = "submit-form container col-4 font_bold">
-                <div class = "form">  
-                    <br>
-                    <div class = "form-group donation_message">
-                        <textarea class = "form-control" style = "text-align: left;" rows = "6" id="message" placeholder="message">  </textarea>
-                    </div>
-                    <br>
-                    <button onclick='document.getElementById("submit_script").innerHTML = "message saved"'style = "border-radius: 30%; border: none; padding: 10" class = "font_heavy_small button float-end button-background" id = "submit_donation_message"><span> donate </span> </button>
-                    <br><br>
-                    <p id = "submit_script" class = "font_heavy"></p>
-                    <br>
-                </div>
-            </div>
-            
+        <br><br><br>
     </section>
     <hr>
-    <p>payment images here</p>
+    <div style = "text-align: right;" class = "container-sm">
+        <br>
+        <span class="dc_payment_icons_mini_43 dc_visa2_mini" title="Visa"></span>
+        <span class="dc_payment_icons_mini_43 dc_mastercard2_mini" title="Mastercard"></span>
+        <span class="dc_payment_icons_mini_43 dc_amex2_mini" title="American Express"></span>
+        <span class="dc_payment_icons_mini_43 dc_discover2_mini" title="Discover"></span>
+        <span class="dc_payment_icons_mini_43 dc_electron2_mini" title="Visa Electron"></span>
+        <span class="dc_payment_icons_mini_43 dc_cirrus2_mini" title="Cirrus"></span>
+        <span class="dc_payment_icons_mini_43 dc_ccv2_mini" title="CCV"></span>
+        <span class="dc_payment_icons_mini_43 dc_paypal2_mini" title="PayPal"></span>
+        <span class="dc_payment_icons_mini_43 dc_amazon2_mini" title="Amazon Payments"></span>
+        <span class="dc_payment_icons_mini_43 dc_googleckout2_mini" title="Google Checkout"></span>
+    </div>
 
 <!--update footer, add social media icons-->
-    <br><br><br>
+    <br>
     <footer>
         <small>
         <div class = "container text-center" >
@@ -376,14 +370,15 @@
 
             <div class = "col text-light footer_font">
                 Location <br>  
-                    <h6 style = "display: block; padding-top: 10;" class = "font_bold"><a class = "text-light" style = "text-decoration: none;" href = "#location">ADDRESS</a></6>
+                    <h6 style = "display: block; padding-top: 10;" class = "font_bold"><a class = "text-light" style = "text-decoration: none;" href = "#location">ADDRESS</a></h6>
             </div>
 
             <div class = "col text-light footer_font">
                 More Info<br>  
-                    <h6 style = "display: block; padding-top: 10;" class = "font_bold"><a class = "text-light" style = "text-decoration: none;" href = "#about">ABOUT</a></6>
-                    <h6 style = "display: block; padding-top: 10;" class = "font_bold"><a class = "text-light" style = "text-decoration: none;" href = "#contact">CONTACT</a></6>
-                    <h6 style = "display: block; padding-top: 10;" class = "font_bold"><a class = "text-light" style = "text-decoration: none;" href = #faq>FAQ</a></6>        
+                    <h6 style = "display: block; padding-top: 10;" class = "font_bold"><a class = "text-light" style = "text-decoration: none;" href = "#about">ABOUT</a></h6>
+                    <h6 style = "display: block; padding-top: 10;" class = "font_bold"><a class = "text-light" style = "text-decoration: none;" href = "#contact">CONTACT</a></h6>
+                    <h6 style = "display: block; padding-top: 10;" class = "font_bold"><a class = "text-light" style = "text-decoration: none;" href = #faq>FAQ</a></h6>      
+                    <h6 style = "display: block; padding-top: 10;" class = "font_bold"><a class = "text-light" style = "text-decoration: none;" href = #donation>DONATE</a></h6>      
             </div>
         </div>
     </div>

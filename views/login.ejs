@@ -1,20 +1,56 @@
-<h1 class = "text-center"> Sign in </h1>
+<html>
+    <head>
+        <link rel = "icon" href="../assets/favicon.ico">
+        <title> umai cookies </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href = "../styles/styles.css" rel = "stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+        <meta charset = "utf-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="dcodes/payment_icons/dc_payment_icons.css" />
+        <link rel="stylesheet" type="text/css" href="http://cdn.dcodes.net/2/payment_icons/dc_payment_icons.css" />
+    </head>
 
-<% if (messages.error){ %>
-    <%= messages.error %>
-<% } %>
 
-<form class = "text-center"action = '/login' method = 'POST'>
+<body style = "text-align: center;">
     <div>
-        <label for = 'email'>Email</label>
-        <input type = 'email' id = 'email' name = 'email' required>
+        &emsp;&emsp;&emsp;&emsp;<img class = "logo zoom" src = "assets/umai_logo_trans.png" width="460" height="270">
     </div>
+
+        <section id = "form" class = "font_bold">
+<br>
+            <h1 class ="font_bold"> &ensp;&ensp;&ensp;Sign in </h1>
+            <br>
+          
+            <div class = "container col-4 font_bold"></div>
+            <div class = "form">  
+            <form class = "text-center"action = '/login' method = 'POST'>
+                <div>
+                    <label for = 'email'>Email&emsp;&ensp;&nbsp;&emsp;&ensp;&nbsp;</label>
+                    <input style = " width: 200px;
+                    display: inline-block;" type = 'email' id = 'email' name = 'email' required>
+                </div>
+                <h5 style = "color: red;"> <br>&emsp;&emsp;&emsp;&emsp;&emsp;<% if (messages.error){ %> <%= messages.error %>
+                <% } %></h5>
+                
+                <div>
+                    <label for = 'password'>Password&emsp;&ensp;&nbsp;</label>
+                    <input style = "  width: 200px;
+                    display: inline-block;" type = 'password' id = 'password' name = 'password' required>
+                </div>
+                <br><br>
+
+                <button type = 'submit'style = "border-radius: 30%; border: none; padding: 10" class = "font_heavy_small button button-background"> <span> Login </span> </button>
+                &ensp;&ensp;&ensp;<a style = "color: #007c80"class = "text-center" href = '/register'> Sign up</a> 
     
-    <div>
-        <label for = 'password'>Password</label>
-        <input type = 'password' id = 'password' name = 'password' required>
-    </div>
-
-    <button type = 'submit'>Login</button>
-    <a class = "text-center" href = '/register'> Sign up</a> 
-</form>
+            </form>
+            </div>
+        </div>
+            
+        </section>
+    </body>
+</html>
