@@ -11,6 +11,12 @@ h1 {
     font-weight: bold;
 }
 
+.font_cart{
+    font-family: 'Poiret One';
+    font-weight: bold;
+    font-size: 10;
+}
+
 .font_heavy{
     font-family: 'Passion One';
     font-size: 28;
@@ -113,6 +119,15 @@ footer{
    background-color: #D9C82C;
 }
 
+.button-order-background{
+    background-color: #D9C82C;
+ }
+
+.button-order-background:active{
+    background-color:rgb(39, 160, 176);
+    color: white
+ }
+
 .button_donation{
     background-color: #D9C82C;
     position: relative;
@@ -154,9 +169,8 @@ hr{
 }
 
 
-
-.form-label{
-    width: 200px;
-    display: inline-block;
-
-}
+.dropdown-menu {
+    max-height:400px !important;
+    width: 650px !important;
+    overflow:scroll; 
+ }

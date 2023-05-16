@@ -16,7 +16,6 @@
     </head>
 
     <body>
-       
         <section id = "index">
         <nav class = "navbar fixed-top navbar-expand-md navbar-light bg-light bg-transparent container-fluid">
             <a class = "navbar-brand font_bold" href = "#index"><img class = "logo" src = "assets/umai_logo_trans.png" width="155x" height="70px"></a>
@@ -46,11 +45,10 @@
                             <a style = "display: inline;"class="nav-link font_bold text-dark highlight dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id = "dropdown-menu" href="#"><i class="fa fa-fw fa-user"></i></a>
                             <ul class="dropdown-menu dropdown-menu-right end-0 text-center" aria-labelledby="dropdownMenuLink">
                                 <li>WELCOME, <%= name %>!  <br><a class="dropdown-item highlight">
-                                      <form style = "text-align: center;"action = "/logout" method = "POST" >
+                                 
                                         <br>
-                                        <button type = 'submit' style = "border-radius: 30%; border: none; padding: 10" class = "font_heavy_small button button-background"> <span> LOGOUT</span> </button>
-                                        <br>
-                                    </form>
+                                        <button type = 'submit' style = "border-radius: 30%; border: none; padding: 10" class = "font_heavy_small button button-background"> <span> <a style = "text-decoration: none !important; color: white" href = "http://127.0.0.1:4000/">LOGOUT<a></span> </button>
+                            
                                     </a>
                                 </li>
 
@@ -59,10 +57,35 @@
 
                         <li class="nav-item dropdown">
                             <a style = "display: inline;"class="nav-link font_bold text-dark highlight dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id = "dropdown-menu" href="#"> <i class="bi bi-cart"></i></a>
-                            <ul class="dropdown-menu dropdown-menu-right end-0 text-center" aria-labelledby="dropdownMenuLink">
-                                <li><a class="dropdown-item" href = "#">YOUR CART</a></li>
-                               
-                            </ul>
+                            <ul class="dropdown-menu dropdown-menu-right end-0" aria-labelledby="dropdownMenuLink">
+                                <li><a style = "font-weight: bold;" class="dropdown-item highlight" href = "#">YOUR CART</a></li>
+                                <br>
+                                <div class = "container text-center">
+                                    <div class = "row"  style = "padding-bottom:10">
+                                        <li id = "product" class = "col font_bold"></li>
+                                    </div>
+                                </div>
+
+                                    <li id = "total" class = "col font_bold" style = "text-align: right;"></li>
+                                    <br>
+                                    <button class = "button-background button_donation float-end font_bold" style = "border-radius: 30%; border: none; padding: 10"><a style = "text-decoration: none !important; color: white" href = "#">CHECKOUT</a></button>
+                                    <hr>
+                                    <div style = "text-align: right;" class = "container-sm">
+                                        <br>
+                                        <span class="dc_payment_icons_mini_43 dc_visa2_mini" title="Visa"></span>
+                                        <span class="dc_payment_icons_mini_43 dc_mastercard2_mini" title="Mastercard"></span>
+                                        <span class="dc_payment_icons_mini_43 dc_amex2_mini" title="American Express"></span>
+                                        <span class="dc_payment_icons_mini_43 dc_discover2_mini" title="Discover"></span>
+                                        <span class="dc_payment_icons_mini_43 dc_electron2_mini" title="Visa Electron"></span>
+                                        <span class="dc_payment_icons_mini_43 dc_cirrus2_mini" title="Cirrus"></span>
+                                        <span class="dc_payment_icons_mini_43 dc_ccv2_mini" title="CCV"></span>
+                                        <span class="dc_payment_icons_mini_43 dc_paypal2_mini" title="PayPal"></span>
+                                        <span class="dc_payment_icons_mini_43 dc_amazon2_mini" title="Amazon Payments"></span>
+                                        <span class="dc_payment_icons_mini_43 dc_googleckout2_mini" title="Google Checkout"></span>
+                                    </div>
+                          
+                          
+                                </ul>
                         </li>
                         
                     </ul>
@@ -70,336 +93,350 @@
                     </div>
                 </nav>
         </section>
-
-
+    <!--sections for the rest of the navbar indexes-->
 <br>
- <div class = "text-center"> <img class = "zoom" style = "max-width: 100%;" src = "assets/umai_logo_trans.png" width="1000" height="400"> </div>
- <div class = "text-center font_caption container-sm" id = "text">
-     <br>
-     Providing homemade cookies and lactation cookies to the New Orleans and Baton Rouge metro areas! Explore our site!
- </div>
+    <div class = "text-center"> <img class = "zoom" style = "max-width: 100%;" src = "assets/umai_logo_trans.png" width="1000" height="400"> </div>
+    <div class = "text-center font_caption container-sm" id = "text">
+        <br>
+        Providing homemade cookies and lactation cookies to the New Orleans and Baton Rouge metro areas! Explore our site!
+    </div>
+   
+    <section id = "cookies" class = "text-center" id = "text">    
+        <br><br><br><br>
+        <div class = "container-sm"> 
+            <h1 class = "font_bold">Homemade Cookies</h1> <br>
+            <h5 class = "font_bold">Freshly baked cookies available by the dozen for pickup in the New Orleans metro area </h5>
+            <h5 class = "font_bold">Pickup is at French Truck Coffee Mid-City on Saturdays and Sundays between 3pm - 6pm</h5>
+            <h6 style = "display: inline; padding: 3px" class = "font_bold">Note: Local delivery is only available for orders containing <h6 style = "display: inline; padding: 3px" class = "font_heavy">frozen</h6> <h6 style = "display: inline; padding: 3px" class = "font_bold">TT Cookies.</h6>
+        </div>
+        <br><br><br>
+        <div class = "container text-center">
+            <div class = "row">
+            <div class = "col text-center">
+                <div class = "card text-center col" style = "border:none">
+                    <div class = "card-block">
+                    <img class = "zoom" style = "max-width: 100%;"src = "assets/cookie_1.png" width="200" height="200"><br>
+                    <h2 class = "card-title mt-2 font_bold"> Dark Chocolate Toffee </h2><br>
+                    <button onclick =  "addItemToCart(1); addHTMLProduct1(); calculateTotal();" style = "border-radius: 30%; border: none; padding: 10" class = "font_heavy_small button button-order-background"> <span> order </span> </button>
+                </div></div></div>  
 
- <section id = "cookies" class = "text-center" id = "text">    
-     <br><br><br><br>
-     <div class = "container-sm"> 
-         <h1 class = "font_bold">Homemade Cookies</h1> <br>
-         <h5 class = "font_bold">Freshly baked cookies available by the dozen for pickup in the New Orleans metro area </h5>
-         <h5 class = "font_bold">Pickup is at French Truck Coffee Mid-City on Saturdays and Sundays between 3pm - 6pm</h5>
-         <h6 style = "display: inline; padding: 3px" class = "font_bold">Note: Local delivery is only available for orders containing <h6 style = "display: inline; padding: 3px" class = "font_heavy">frozen</h6> <h6 style = "display: inline; padding: 3px" class = "font_bold">TT Cookies.</h6>
-     </div>
-     <br><br><br>
-     <div class = "container text-center">
-         <div class = "row">
-         <div class = "col text-center">
-             <div class = "card text-center col" style = "border:none">
-                 <div class = "card-block zoom">
-                 <img style = "max-width: 100%;"src = "assets/cookie_1.png" width="200" height="200">
-                 <h2 class = "card-title mt-2 font_bold"> Dark Chocolate Toffee </h2>
-             </div></div></div>  
-
-         <div class = "col text-center">
-             <div class = "card text-center col" style = "border:none">
-                 <div class = "card-block zoom">
-                 <img style = "max-width: 100%;" src = "assets/cookie_4.png" width="200" height="200">
-                 <h2 class = "card-title mt-2 font_bold"> Black and White Sesame </h2>
-             </div></div> </div> 
-     </div>
- </div>
-
- </section>
-
- <br><br>
-
- <section id = "lactation"> 
-     <br><br><br><br>
-     <div class = "centered">  
-         <h1 class = "font_bold">Lactation Cookies</h1> <br>
-         <video width="200" height="180" preload controls>
-             <source src="assets/umai_vid.mov" type="video/mp4">
-         </video>
-         <div class = "container text-center">
-             <div class = "row">
-             <div class = "col text-center">
-                 <div class = "card text-center col" style = "border:none">
-                     <div class = "card-block zoom">
-                     <img style = "max-width: 100%;"src = "assets/cookie_2.png" width="200" height="200">
-                     <h2 class = "card-title mt-2 font_bold"> TT Cookies - Milk Chocolate </h2>
-                 </div></div></div>  
- 
-             <div class = "col text-center">
-                 <div class = "card text-center col" style = "border:none">
-                     <div class = "card-block zoom">
-                     <img style = "max-width: 100%;" src = "assets/cookie_3.png" width="200" height="200">
-                     <h2 class = "card-title mt-2 font_bold">  TT Cookies - Dark Chocolate Toffee </h2>
-                 </div></div> </div> 
-         </div>
-     </div>
-         
-     </div>
- </section>
- <br><br>
- <section id = "order"> 
-     <br><br><br><br>
-     <div class = "centered"> 
-         <h1 class = "font_bold">How to Order</h1> 
-     </div>
-
-     <div class = "small-container">
-         <ol>
-             <li style = "padding-top: 5;"> Choose Pickup or Delivery. <h6 class = "font_heavy_howto" style = "display: inline;">Local delivery is for frozen TT Cookies only. Orders for frozen dough must be made separately.</h6> No-contact delivery is available. </li>
-             <li style = "padding-top: 5;"> Schedule your order for an available date. </li>
-             <li style = "padding-top: 5;"> Add items to cart and check out. Please include any special instructions for deliveries (leave at door, gate codes, don't ring doorbell, etc.).
-             <li style = "padding-top: 5;"> A notification will be sent via text and email to confirm your order. </li>
-             <li style = "padding-top: 5;"> A <h6 class = "font_heavy_howto" style = "display: inline;">second</h6> notification will be sent via text the day before pickup or delivery. </li>
-             <li style = "padding-top: 5;"> Pickup orders will be ready at French Truck Coffee in Mid-City NOLA on Saturdays and Sundays between 3pm and 6pm, and delivery orders will be fulfilled on Tuesdays and Wednesdays. </li>
-             <li style = "padding-top: 5;"> ENJOY! 😄 </li>
-         </ol>
-
-         <br>  <br>
-         
-         <p style = "font-weight: bold;">PLEASE NOTE:</p>
-         <ul>
-             <li style = "padding-top: 5;">Ordering for each week will <h6 class = "font_heavy_howto" style = "display: inline;">close on Wednesdays at 11:59pm.</h6></li>
-             <li style = "padding-top: 5;">Cancellation requests can be made up until <h6 class = "font_heavy_howto" style = "display: inline;">Wednesdays at 11:59pm before the scheduled pickup day.</h6> Refunds will NOT be issued after this time. If there are any scheduling issues for local delivery orders, please text <a style = "text-decoration-color: #007c80;"href="tel:5042701015" target="_blank"><h6 class = "font_heavy_howto" style = "display: inline;">(504) 270-1015</h6></a> as soon as possible to reschedule!</li>
-         </ul>
- </section>
- 
-  <section id = "about">
-     <br><br><br><br>
-     <h1 class = "font_bold">About</h1> <br><br>
-     <div class = "row">
-     <div class = "col-sm-6 text-center about-padding">    
-             <h3 class = "font_bold" style = "font-style: italic;" >The Name</h3> 
-             <h5 style ="display: inline;" class = "font_bold"> Umai</h5> (<h3 style = "display: inline;"class = "font_heavy_howto">うまい</h3><h5 style ="display: inline;" class = "font_bold">, pronounced "ooh-my") is a Japanese word that can be translated to "good" or "delicious". The company's name was inspired by the character Rengoku from an anime called Demon Slayers. He was known for always saying the word "umai" after he took a bite of food to express its deliciousness. But there was also deep meaning to his actions. In Japan, samurai were trained to relish and enjoy every bite of their food because it might be their last meal. We hope our cookies can provide a moment of bliss as you enjoy each bite!</h5>
-                 <br><br>
-             <h3 class = "font_bold" style = "font-style: italic;" >The Mission</h3>
-             <h5 style = "display: inline;" class = "font_bold" >umai cookies was founded by Trinh Tran after much encouragement and support from her friends and family. She has been making her signature Dark Chocolate Toffee cookies for gatherings and lactation cookies for her nursing cousins for years. Realizing the impact lactation cookies would make for nursing mothers struggling with low breastmilk supply or inflated formula prices, she decided to launch umai cookies. The lactation cookies are TT Cookies™ to make it easier to refer to and were named after her name and well... breasts. Our aim is to provide products that are just good: focusing on high quality ingredients and playful flavor profiles.</h5>
-     </div>
-     
-     <div class="col-sm-6 text-center">
-         <br><br><br>
-         <img class = "zoom" src = "assets/umai_2.png" height="480" width="400">
-     </div>
-
- </div>
- </section>
+            <div class = "col text-center">
+                <div class = "card text-center col" style = "border:none">
+                    <div class = "card-block">
+                    <img class = "zoom" style = "max-width: 100%;" src = "assets/cookie_4.png" width="200" height="200"><br>
+                    <h2 class = "card-title mt-2 font_bold"> Black and White Sesame </h2><br>
+                    <button onclick = "addItemToCart(2); addHTMLProduct2(); calculateTotal();" style = "border-radius: 30%; border: none; padding: 10" class = "font_heavy_small button button-order-background"> <span> order </span> </button>
+                </div></div> </div> 
+        </div>
 
 
- <section id = "location">
-     <br><br><br><br>
-     <div class = "centered">  
-         <h1 class = "font_bold">Pickup Location & Hours</h1> 
-         <br>
-     </div>
+    
+    </div>
 
-     <div class = "centered">
-     <div >
-         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.1166975021406!2d-90.09824822545015!3d29.976076074958076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620aff75bbeaab3%3A0x300f9ff7e3d0ceea!2sFrench%20Truck%20Coffee!5e0!3m2!1sen!2sus!4v1682703478655!5m2!1sen!2sus" width="700" height="370" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-     </div>
+    </section>
 
-     <div class = "container">
-         <br><br>
-     <div class = "row justify-content-center font_bold">
-         <div class = "col-4 text-center">
-             <h6 style = "display: block;" class = "font_bold">French Truck Coffee</h6>
-             <h6 style = "display: block;" class = "font_bold">420 North Scott Street</h6>
-             <h6 style = "display: block;" class = "font_bold">New Orleans, Louisiana 70119</h6>
-             <h6 style = "display: block;" class = "font_bold"><a style = "text-decoration-color: #007c80;" href="tel:5042701015" target="_blank"><h6 class = "font_heavy_howto" style = "display: inline;">(504) 270-1015</h6></a></h6>
-             <h6 style = "display: block;" class = "font_bold"><a style = "text-decoration-color: #007c80;" href="mailto:umai.nola@gmail.com" target="_blank"><h6 class = "font_heavy_howto" style = "display: inline;">umai.nola@gmail.com</h6></a></h6>
-             <h6 style = "display: block;" class = "font_bold"><a style = "text-decoration-color: #007c80;"href="https://www.google.com/maps/dir/?api=1&destination=420+North+Scott+Street+New+Orleans+LA+70119" target="_blank"><h6 class = "font_heavy_howto" style = "display: inline;">Get directions</h6></a></h6>
-             </div>
-         
-         <div class = "col-4 text-center">
-             <h6 style = "display: block;" class = "font_bold">Monday Closed</h6>
-             <h6 style = "display: block;" class = "font_bold">Tuesday Closed</h6>
-             <h6 style = "display: block;" class = "font_bold">Wednesday Closed</h6>
-             <h6 style = "display: block;" class = "font_bold">Thursday Closed</h6>
-             <h6 style = "display: block;" class = "font_bold">Friday Closed</h6>
-             <h6 style = "display: block;" class = "font_bold">Saturday 3:00 pm - 6:00 pm</h6>
-             <h6 style = "display: block;" class = "font_bold">Sunday 3:00 pm - 6:00 pm</h6>
-         </div>
-     </div>
-     <br>
- </div>
- </section>
+    <br><br>
 
- <br><br><br><br>
- 
- <section id = "contact">
-     <br><br><br><br>
-     <div class = "centered">  
-         <h1 class = "font_bold">Contact Us</h1>
-         <h5 class = "font_bold container-sm">Text <a style = "text-decoration-color: #007c80;" href="tel:5042701015" target="_blank"><h6 class = "font_heavy_howto" style = "display: inline;">(504) 270-1015</h6></a>,
-         DM <a style = "text-decoration-color: #007c80;" href="mailto:umai.nola@gmail.com" target="_blank"><h6 class = "font_heavy_howto" style = "display: inline;">umai.nola@gmail.com</h6></a> on Instagram, or submit a form below for any questions, concerns, & suggestions!</h5>
-         <div class = "submit-form container col-4 font_bold">
-             <div class = "form">  
-                 <br>
-                 <div class = "mb-3">
-                     <input  class = "form-control inputfield1" type = "text" id = "name" placeholder="full name">
-                 </div>
-                 <div class = "mb-3">
-                     <input class = "form-control inputfield2" type = "email" id = "email" placeholder="email">
-                 </div>
-                 <div class = "form-group mb-3 inputfield3">
-                     <textarea class = "form-control " rows = "6" id="message" placeholder="message">  </textarea>
-                 </div>
-                 <button onclick='document.getElementById("submit_script").innerHTML = "submitted!"'style = "border-radius: 30%; border: none; padding: 10" class = "font_heavy_small button float-end button-background" id = "submit"> <span> submit </span> </button>
-                 <p id = "submit_script" class = "font_heavy"></p>
-             </div>
-         </div>
-     </div>
- </section>
+    <section id = "lactation" class = "text-center"> 
+        <br><br><br><br>
+        <div class = "container-sm">
+            <h1 class = "font_bold">Lactation Cookies</h1> <br>
+            <h5 class = "font_bold">TT Cookies™ are lactation cookies formulated to assist nursing mothers with breastmilk production!* They contain rolled oats, ground flaxseed, and brewer's yeast, which contain certain galactagogues that can help increase milk production. They're also safe for the whole family to eat and are a great healthier alternative to a tasty treat!</h5>
+            <br>
+            <h5 class = "font_bold" style = "display: inline;"> Available by the dozen as </h5> <h6 style = "display: inline;" class = "font_heavy_howto"> frozen cookie dough balls </h6> <h5 class = "font_bold" style = "display: inline;"> or </h5> <h6 style = "display: inline;" class = "font_heavy_howto"> pre-baked cookies </h6>.  <h5 class = "font_bold" style = "display: inline;"></h5> <h5 class = "font_bold" style = "display: inline;"> All frozen cookie dough will be packaged in resealable, freezer-safe bags and will include complementary parchment paper (one sheet per dozen) and a sachet of flaky sea salt for finishing.</h5><br>
+            <br> 
+            <h5 class = "font_bold" style = "display: inline;"> Local delivery is available on Tuesdays and Wednesdays for</h5><h6 style = "display: inline;" class = "font_heavy_howto"> frozen dough </h6> <h5 class = "font_bold" style = "display: inline;"> to the New Orleans and Baton Rouge metro areas.</h5>
+            <br> <br>
+            <h6 class = "font_heavy_howto">Please mention any allergies you or your child may have. Contains dairy, gluten, and eggs.</h6>
+            <br><br><br>
+            </div>
 
- <br><br><br><br>    
+            <div class = "container text-center">
+                <div class = "row">
+                <div class = "col text-center">
+                    <div class = "card text-center col" style = "border:none">
+                        <div class = "card-block">
+                        <img class = "zoom" style = "max-width: 100%;"src = "assets/cookie_2.png" width="200" height="200"><br>
+                        <h2 class = "card-title mt-2 font_bold"> TT Cookies - Milk Chocolate </h2><br>
+                        <button onclick =  "addItemToCart(3); addHTMLProduct3(); calculateTotal();" style = "border-radius: 30%; border: none; padding: 10" class = "font_heavy_small button button-order-background"> <span> order </span> </button>
+                    </div></div></div>  
+    
+                <div class = "col text-center">
+                    <div class = "card text-center col" style = "border:none">
+                        <div class = "card-block">
+                        <img class = "zoom" style = "max-width: 100%;" src = "assets/cookie_3.png" width="200" height="200"><br>
+                        <h2 class = "card-title mt-2 font_bold">  TT Cookies - Dark Chocolate Toffee </h2><br>
+                        <button onclick =  "addItemToCart(4); addHTMLProduct4(); calculateTotal();" style = "border-radius: 30%; border: none; padding: 10" class = "font_heavy_small button button-order-background"> <span> order </span> </button>
+                    </div></div> </div> 
+            </div>
+        </div>
+            
+        </div>
+    </section>
+    <br><br>
+    <section id = "order"> 
+        <br><br><br><br>
+        <div class = "centered"> 
+            <h1 class = "font_bold">How to Order</h1> 
+        </div>
 
- <section id = "faq">
-     <br><br><br> <br>
-         <h1 class = "font_bold text-center">Frequently Asked Questions</h1>
-         <br><br>
-         <div class = "row">
-             <div class = "col-sm-6 about-padding">    
-             <h2 class = "font_bold text-center">Homemade Cookies</h2>
-             <br>
-             <h5 class = "font_heavy_howto">How are your cookies made?</h5>
-             <h6 class = "font_bold">All cookies use a base recipe that contains flour, sugar, dark brown sugar, kosher salt, baking powder, butter, eggs, and vanilla extract. Additional ingredients are added depending on the flavor variations.</h6>
-             <br>
+        <div class = "small-container">
+            <ol>
+                <li style = "padding-top: 5;"> Choose Pickup or Delivery. <h6 class = "font_heavy_howto" style = "display: inline;">Local delivery is for frozen TT Cookies only. Orders for frozen dough must be made separately.</h6> No-contact delivery is available. </li>
+                <li style = "padding-top: 5;"> Schedule your order for an available date. </li>
+                <li style = "padding-top: 5;"> Add items to cart and check out. Please include any special instructions for deliveries (leave at door, gate codes, don't ring doorbell, etc.).
+                <li style = "padding-top: 5;"> A notification will be sent via text and email to confirm your order. </li>
+                <li style = "padding-top: 5;"> A <h6 class = "font_heavy_howto" style = "display: inline;">second</h6> notification will be sent via text the day before pickup or delivery. </li>
+                <li style = "padding-top: 5;"> Pickup orders will be ready at French Truck Coffee in Mid-City NOLA on Saturdays and Sundays between 3pm and 6pm, and delivery orders will be fulfilled on Tuesdays and Wednesdays. </li>
+                <li style = "padding-top: 5;"> ENJOY! 😄 </li>
+            </ol>
 
-             <h5 class = "font_heavy_howto">How do I store my cookies?</h5>
-             <h6 class = "font_bold">Store cookies in the provided paper bags or in an airtight plastic bag or container to maintain freshness.</h6>
-             <br>
+            <br>  <br>
+            
+            <p style = "font-weight: bold;">PLEASE NOTE:</p>
+            <ul>
+                <li style = "padding-top: 5;">Ordering for each week will <h6 class = "font_heavy_howto" style = "display: inline;">close on Wednesdays at 11:59pm.</h6></li>
+                <li style = "padding-top: 5;">Cancellation requests can be made up until <h6 class = "font_heavy_howto" style = "display: inline;">Wednesdays at 11:59pm before the scheduled pickup day.</h6> Refunds will NOT be issued after this time. If there are any scheduling issues for local delivery orders, please text <a style = "text-decoration-color: #007c80;"href="tel:5042701015" target="_blank"><h6 class = "font_heavy_howto" style = "display: inline;">(504) 270-1015</h6></a> as soon as possible to reschedule!</li>
+            </ul>
+    </section>
+    
+     <section id = "about">
+        <br><br><br><br>
+        <h1 class = "font_bold">About</h1> <br><br>
+        <div class = "row">
+        <div class = "col-sm-6 text-center about-padding">    
+                <h3 class = "font_bold" style = "font-style: italic;" >The Name</h3> 
+                <h5 style ="display: inline;" class = "font_bold"> Umai</h5> (<h3 style = "display: inline;"class = "font_heavy_howto">うまい</h3><h5 style ="display: inline;" class = "font_bold">, pronounced "ooh-my") is a Japanese word that can be translated to "good" or "delicious". The company's name was inspired by the character Rengoku from an anime called Demon Slayers. He was known for always saying the word "umai" after he took a bite of food to express its deliciousness. But there was also deep meaning to his actions. In Japan, samurai were trained to relish and enjoy every bite of their food because it might be their last meal. We hope our cookies can provide a moment of bliss as you enjoy each bite!</h5>
+                    <br><br>
+                <h3 class = "font_bold" style = "font-style: italic;" >The Mission</h3>
+                <h5 style = "display: inline;" class = "font_bold" >umai cookies was founded by Trinh Tran after much encouragement and support from her friends and family. She has been making her signature Dark Chocolate Toffee cookies for gatherings and lactation cookies for her nursing cousins for years. Realizing the impact lactation cookies would make for nursing mothers struggling with low breastmilk supply or inflated formula prices, she decided to launch umai cookies. The lactation cookies are TT Cookies™ to make it easier to refer to and were named after her name and well... breasts. Our aim is to provide products that are just good: focusing on high quality ingredients and playful flavor profiles.</h5>
+        </div>
+        
+        <div class="col-sm-6 text-center">
+            <br><br><br>
+            <img class = "zoom" src = "assets/umai_2.png" height="480" width="400">
+        </div>
 
-             <h5 class = "font_heavy_howto">How long will the cookies stay fresh?</h5>
-             <h6 class = "font_bold">All cookie orders are baked fresh the morning of your scheduled pickup day. Cookies typically stay fresh and chewy for 7 days with proper storage.</h6>
-             <br>
+    </div>
+    </section>
 
-             <h5 class = "font_heavy_howto">Is shipping available?</h5>
-             <h6 class = "font_bold">Shipping is currently unavailable. Shipping options will become available once packaging and pricing logistics are determined.</h6>
-             <br>
 
-             <h5 class = "font_heavy_howto">Can I order some for my large event?</h5>
-             <h6 class = "font_bold">Large event orders and catering is unavailable but will be available in the near future.</h6>
-             <br>
+    <section id = "location">
+        <br><br><br><br>
+        <div class = "centered">  
+            <h1 class = "font_bold">Pickup Location & Hours</h1> 
+            <br>
+        </div>
 
-             <h5 class = "font_heavy_howto">Will pickup be available to areas outside of New Orleans?</h5>
-             <h6 class = "font_bold">Pickup will be available in Baton Rouge on select weekends in the near future.</h6>
-             <br>
+        <div class = "centered">
+        <div >
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.1166975021406!2d-90.09824822545015!3d29.976076074958076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620aff75bbeaab3%3A0x300f9ff7e3d0ceea!2sFrench%20Truck%20Coffee!5e0!3m2!1sen!2sus!4v1682703478655!5m2!1sen!2sus" width="700" height="370" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
-             <h5 class = "font_heavy_howto">Will other flavors be available?</h5>
-             <h6 class = "font_bold">Yes! Other flavors are currently being tested, and will be available when ready!</h6>
-             </div>
-             
-             <div class="col-sm-6 about-padding">
-                 <h2 class = "font_bold text-center">TT Cookies™</h2>
-                 <br>
+        <div class = "container">
+            <br><br>
+        <div class = "row justify-content-center font_bold">
+            <div class = "col-4 text-center">
+                <h6 style = "display: block;" class = "font_bold">French Truck Coffee</h6>
+                <h6 style = "display: block;" class = "font_bold">420 North Scott Street</h6>
+                <h6 style = "display: block;" class = "font_bold">New Orleans, Louisiana 70119</h6>
+                <h6 style = "display: block;" class = "font_bold"><a style = "text-decoration-color: #007c80;" href="tel:5042701015" target="_blank"><h6 class = "font_heavy_howto" style = "display: inline;">(504) 270-1015</h6></a></h6>
+                <h6 style = "display: block;" class = "font_bold"><a style = "text-decoration-color: #007c80;" href="mailto:umai.nola@gmail.com" target="_blank"><h6 class = "font_heavy_howto" style = "display: inline;">umai.nola@gmail.com</h6></a></h6>
+                <h6 style = "display: block;" class = "font_bold"><a style = "text-decoration-color: #007c80;"href="https://www.google.com/maps/dir/?api=1&destination=420+North+Scott+Street+New+Orleans+LA+70119" target="_blank"><h6 class = "font_heavy_howto" style = "display: inline;">Get directions</h6></a></h6>
+                </div>
+            
+            <div class = "col-4 text-center">
+                <h6 style = "display: block;" class = "font_bold">Monday Closed</h6>
+                <h6 style = "display: block;" class = "font_bold">Tuesday Closed</h6>
+                <h6 style = "display: block;" class = "font_bold">Wednesday Closed</h6>
+                <h6 style = "display: block;" class = "font_bold">Thursday Closed</h6>
+                <h6 style = "display: block;" class = "font_bold">Friday Closed</h6>
+                <h6 style = "display: block;" class = "font_bold">Saturday 3:00 pm - 6:00 pm</h6>
+                <h6 style = "display: block;" class = "font_bold">Sunday 3:00 pm - 6:00 pm</h6>
+            </div>
+        </div>
+        <br>
+    </div>
+    </section>
 
-                 <h5 class = "font_heavy_howto">What are lactation cookies?</h5>
-                 <h6 class = "font_bold">Lactation cookies, also known as breastfeeding cookies, are nutrient-dense cookies made specifically for women that produce breastmilk.</h6>
-                 <br>
-                 <h5 class = "font_heavy_howto">Is there breastmilk in these lactation cookies?</h5>
-                 <h6 class = "font_bold">No. None of our cookies contain breastmilk as an ingredient.</h6>
-                 <br>
-                 <h5 class = "font_heavy_howto">What makes lactation cookies different from regular cookies?</h5>
-                 <h6 class = "font_bold">Our lactation cookies are made of our base recipe (see above) and include lactogenic (milk-producing) ingredients. The lactogenic ingredients we use are rolled oats, ground flaxseed meal, and brewer's yeast. We ensure all of these ingredients are verified non-GMO for your and your baby's health. Visit our Instagram page for upcoming information on specific ingredients!</h6>
-                 <br>
-                 <h5 class = "font_heavy_howto">Can men eat lactation cookies? Will they lactate?</h5>
-                 <h6 class = "font_bold">Yes, men can eat lactation cookies! No worries, they will not produce milk if they accidentally eat these cookies :) it would just be a nutrient-dense treat packed with fiber and carbohydrates for energy.</h6>
-                 <br>
-                 <h5 class = "font_heavy_howto">If I'm not nursing, will my breasts get bigger if I eat them?</h5>
-                 <h6 class = "font_bold">Unfortunately, your breasts will not get bigger if you eat these cookies and aren't breast feeding :( it would just be another healthy alternative to a sweet treat!</h6>
-                 <br>
-                 <h5 class = "font_heavy_howto">How soon will I see an increase in breastmilk supply?</h5>
-                 <h6 class = "font_bold">It depends on the individual, but mothers typically see an increase in supply 1-2 days after supplementing with brewer's yeast. The results will vary from mother to mother, but they usually see an increase in supply by about 2-4 ounces each pump. Supply is also dependent on other factors such as stress, water intake, and proper nutrition. Please conduct your own research on other ways to increase milk supply.</h6>
-                 <br>
-                 <h5 class = "font_heavy_howto">How many cookies should I eat?</h5>
-                 <h6 class = "font_bold">We recommend eating 1-3 cookies daily. Eating more than 3 cookies a day could lead to increased visits to the bathroom due to their high amounts of fiber.</h6>
-                 <br>
-                 <h5 class = "font_heavy_howto">What is the difference between frozen and baked cookies?</h5>
-                 <h6 class = "font_bold">Frozen cookies are for mothers who don't want to feel rushed to eat a whole supply of lactation cookies. They can bake them as needed and enjoy fresh, warm cookies. Baked cookies are for those who don't have time to bake or don't trust their baking skills. Baked cookies can also be stored in the freezer in an airtight container and warmed up as needed.</h6>
-                 <br>
-                 <h5 class = "font_heavy_howto">Will anything be included with my frozen cookie order?</h5>
-                 <h6 class = "font_bold">Each frozen cookie dough order will come with one sheet of parchment paper per dozen ordered and a sachet of flaky sea salt for finishing before baking.</h6>                    
-                 <br>
-                 <h5 class = "font_heavy_howto">Will other flavors be available?</h5>
-                 <h6 class = "font_bold">Yes! Other flavors are currently being tested, and will be available when ready!</h6>
-                 </div>
-         </div>
+    <br><br><br><br>
+    
+    <section id = "contact">
+        <br><br><br><br>
+        <div class = "centered">  
+            <h1 class = "font_bold">Contact Us</h1>
+            <h5 class = "font_bold container-sm">Text <a style = "text-decoration-color: #007c80;" href="tel:5042701015" target="_blank"><h6 class = "font_heavy_howto" style = "display: inline;">(504) 270-1015</h6></a>,
+            DM <a style = "text-decoration-color: #007c80;" href="mailto:umai.nola@gmail.com" target="_blank"><h6 class = "font_heavy_howto" style = "display: inline;">umai.nola@gmail.com</h6></a> on Instagram, or submit a form below for any questions, concerns, & suggestions!</h5>
+            <div class = "submit-form container col-4 font_bold">
+                <div class = "form">  
+                    <br>
+                    <div class = "mb-3">
+                        <input  class = "form-control inputfield1" type = "text" id = "name" placeholder="full name">
+                    </div>
+                    <div class = "mb-3">
+                        <input class = "form-control inputfield2" type = "email" id = "email" placeholder="email">
+                    </div>
+                    <div class = "form-group mb-3 inputfield3">
+                        <textarea class = "form-control " rows = "6" id="message" placeholder="message">  </textarea>
+                    </div>
+                    <button onclick='document.getElementById("submit_script").innerHTML = "submitted!"'style = "border-radius: 30%; border: none; padding: 10" class = "font_heavy_small button float-end button-background" id = "submit"> <span> submit </span> </button>
+                    <p id = "submit_script" class = "font_heavy"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br><br><br><br>    
+
+    <section id = "faq">
+        <br><br><br> <br>
+            <h1 class = "font_bold text-center">Frequently Asked Questions</h1>
+            <br><br>
+            <div class = "row">
+                <div class = "col-sm-6 about-padding">    
+                <h2 class = "font_bold text-center">Homemade Cookies</h2>
+                <br>
+                <h5 class = "font_heavy_howto">How are your cookies made?</h5>
+                <h6 class = "font_bold">All cookies use a base recipe that contains flour, sugar, dark brown sugar, kosher salt, baking powder, butter, eggs, and vanilla extract. Additional ingredients are added depending on the flavor variations.</h6>
+                <br>
+
+                <h5 class = "font_heavy_howto">How do I store my cookies?</h5>
+                <h6 class = "font_bold">Store cookies in the provided paper bags or in an airtight plastic bag or container to maintain freshness.</h6>
+                <br>
+
+                <h5 class = "font_heavy_howto">How long will the cookies stay fresh?</h5>
+                <h6 class = "font_bold">All cookie orders are baked fresh the morning of your scheduled pickup day. Cookies typically stay fresh and chewy for 7 days with proper storage.</h6>
+                <br>
+
+                <h5 class = "font_heavy_howto">Is shipping available?</h5>
+                <h6 class = "font_bold">Shipping is currently unavailable. Shipping options will become available once packaging and pricing logistics are determined.</h6>
+                <br>
+
+                <h5 class = "font_heavy_howto">Can I order some for my large event?</h5>
+                <h6 class = "font_bold">Large event orders and catering is unavailable but will be available in the near future.</h6>
+                <br>
+
+                <h5 class = "font_heavy_howto">Will pickup be available to areas outside of New Orleans?</h5>
+                <h6 class = "font_bold">Pickup will be available in Baton Rouge on select weekends in the near future.</h6>
+                <br>
+
+                <h5 class = "font_heavy_howto">Will other flavors be available?</h5>
+                <h6 class = "font_bold">Yes! Other flavors are currently being tested, and will be available when ready!</h6>
+                </div>
+                
+                <div class="col-sm-6 about-padding">
+                    <h2 class = "font_bold text-center">TT Cookies™</h2>
+                    <br>
+
+                    <h5 class = "font_heavy_howto">What are lactation cookies?</h5>
+                    <h6 class = "font_bold">Lactation cookies, also known as breastfeeding cookies, are nutrient-dense cookies made specifically for women that produce breastmilk.</h6>
+                    <br>
+                    <h5 class = "font_heavy_howto">Is there breastmilk in these lactation cookies?</h5>
+                    <h6 class = "font_bold">No. None of our cookies contain breastmilk as an ingredient.</h6>
+                    <br>
+                    <h5 class = "font_heavy_howto">What makes lactation cookies different from regular cookies?</h5>
+                    <h6 class = "font_bold">Our lactation cookies are made of our base recipe (see above) and include lactogenic (milk-producing) ingredients. The lactogenic ingredients we use are rolled oats, ground flaxseed meal, and brewer's yeast. We ensure all of these ingredients are verified non-GMO for your and your baby's health. Visit our Instagram page for upcoming information on specific ingredients!</h6>
+                    <br>
+                    <h5 class = "font_heavy_howto">Can men eat lactation cookies? Will they lactate?</h5>
+                    <h6 class = "font_bold">Yes, men can eat lactation cookies! No worries, they will not produce milk if they accidentally eat these cookies :) it would just be a nutrient-dense treat packed with fiber and carbohydrates for energy.</h6>
+                    <br>
+                    <h5 class = "font_heavy_howto">If I'm not nursing, will my breasts get bigger if I eat them?</h5>
+                    <h6 class = "font_bold">Unfortunately, your breasts will not get bigger if you eat these cookies and aren't breast feeding :( it would just be another healthy alternative to a sweet treat!</h6>
+                    <br>
+                    <h5 class = "font_heavy_howto">How soon will I see an increase in breastmilk supply?</h5>
+                    <h6 class = "font_bold">It depends on the individual, but mothers typically see an increase in supply 1-2 days after supplementing with brewer's yeast. The results will vary from mother to mother, but they usually see an increase in supply by about 2-4 ounces each pump. Supply is also dependent on other factors such as stress, water intake, and proper nutrition. Please conduct your own research on other ways to increase milk supply.</h6>
+                    <br>
+                    <h5 class = "font_heavy_howto">How many cookies should I eat?</h5>
+                    <h6 class = "font_bold">We recommend eating 1-3 cookies daily. Eating more than 3 cookies a day could lead to increased visits to the bathroom due to their high amounts of fiber.</h6>
+                    <br>
+                    <h5 class = "font_heavy_howto">What is the difference between frozen and baked cookies?</h5>
+                    <h6 class = "font_bold">Frozen cookies are for mothers who don't want to feel rushed to eat a whole supply of lactation cookies. They can bake them as needed and enjoy fresh, warm cookies. Baked cookies are for those who don't have time to bake or don't trust their baking skills. Baked cookies can also be stored in the freezer in an airtight container and warmed up as needed.</h6>
+                    <br>
+                    <h5 class = "font_heavy_howto">Will anything be included with my frozen cookie order?</h5>
+                    <h6 class = "font_bold">Each frozen cookie dough order will come with one sheet of parchment paper per dozen ordered and a sachet of flaky sea salt for finishing before baking.</h6>                    
+                    <br>
+                    <h5 class = "font_heavy_howto">Will other flavors be available?</h5>
+                    <h6 class = "font_bold">Yes! Other flavors are currently being tested, and will be available when ready!</h6>
+                    </div>
+            </div>
 <br><br><br><br>
- </section>
+    </section>
 
- <section id = "donation">
-     <br><br><br> <br>
-         <h1 class = "font_bold container-sm" style = "text-align: left; padding-left: 50;">Donate to us!</h1>
-         <h4 class = "font_bold container-sm" style = "font-size: 20; padding-left: 50;">All donations will go toward funding branding, equipment upgrades to increase production and efficiency, and day-to-day operation costs!</h4>
-         <br><br>
-         <h3 class = "font_heavy_howto container-sm" style = "font-size: 20; padding-left: 50;">Donation amount: </h3>
-     <div class = "font_heavy container-sm" style = "text-align: left; padding-left: 50;">
-         <button class = "button-background button_donation" style = "border-radius: 30%; border: none; padding: 10">$10.00</button>
-         <button class = "button-background button_donation" style = "border-radius: 30%; border: none; padding: 10">$20.00</button>
-         <button class = "button-background button_donation" style = "border-radius: 30%; border: none; padding: 10">$50.00</button>
-         <button class = "button-background button_donation" style = "border-radius: 30%; border: none; padding: 10">$100.00</button>
-     </div> 
-     <br><br><br>
- </section>
- <hr>
- <div style = "text-align: right;" class = "container-sm">
-     <br>
-     <span class="dc_payment_icons_mini_43 dc_visa2_mini" title="Visa"></span>
-     <span class="dc_payment_icons_mini_43 dc_mastercard2_mini" title="Mastercard"></span>
-     <span class="dc_payment_icons_mini_43 dc_amex2_mini" title="American Express"></span>
-     <span class="dc_payment_icons_mini_43 dc_discover2_mini" title="Discover"></span>
-     <span class="dc_payment_icons_mini_43 dc_electron2_mini" title="Visa Electron"></span>
-     <span class="dc_payment_icons_mini_43 dc_cirrus2_mini" title="Cirrus"></span>
-     <span class="dc_payment_icons_mini_43 dc_ccv2_mini" title="CCV"></span>
-     <span class="dc_payment_icons_mini_43 dc_paypal2_mini" title="PayPal"></span>
-     <span class="dc_payment_icons_mini_43 dc_amazon2_mini" title="Amazon Payments"></span>
-     <span class="dc_payment_icons_mini_43 dc_googleckout2_mini" title="Google Checkout"></span>
- </div>
+    <section id = "donation">
+        <br><br><br> <br>
+            <h1 class = "font_bold container-sm" style = "text-align: left; padding-left: 50;">Donate to us!</h1>
+            <h4 class = "font_bold container-sm" style = "font-size: 20; padding-left: 50;">All donations will go toward funding branding, equipment upgrades to increase production and efficiency, and day-to-day operation costs!</h4>
+            <br><br>
+            <h3 class = "font_heavy_howto container-sm" style = "font-size: 20; padding-left: 50;">Donation amount: </h3>
+        <div class = "font_heavy container-sm" style = "text-align: left; padding-left: 50;">
+            <button class = "button-background button_donation" style = "border-radius: 30%; border: none; padding: 10">$10.00</button>
+            <button class = "button-background button_donation" style = "border-radius: 30%; border: none; padding: 10">$20.00</button>
+            <button class = "button-background button_donation" style = "border-radius: 30%; border: none; padding: 10">$50.00</button>
+            <button class = "button-background button_donation" style = "border-radius: 30%; border: none; padding: 10">$100.00</button>
+        </div> 
+        <br><br><br>
+    </section>
+    <hr>
+    <div style = "text-align: right;" class = "container-sm">
+        <br>
+        <span class="dc_payment_icons_mini_43 dc_visa2_mini" title="Visa"></span>
+        <span class="dc_payment_icons_mini_43 dc_mastercard2_mini" title="Mastercard"></span>
+        <span class="dc_payment_icons_mini_43 dc_amex2_mini" title="American Express"></span>
+        <span class="dc_payment_icons_mini_43 dc_discover2_mini" title="Discover"></span>
+        <span class="dc_payment_icons_mini_43 dc_electron2_mini" title="Visa Electron"></span>
+        <span class="dc_payment_icons_mini_43 dc_cirrus2_mini" title="Cirrus"></span>
+        <span class="dc_payment_icons_mini_43 dc_ccv2_mini" title="CCV"></span>
+        <span class="dc_payment_icons_mini_43 dc_paypal2_mini" title="PayPal"></span>
+        <span class="dc_payment_icons_mini_43 dc_amazon2_mini" title="Amazon Payments"></span>
+        <span class="dc_payment_icons_mini_43 dc_googleckout2_mini" title="Google Checkout"></span>
+    </div>
 
 <!--update footer, add social media icons-->
- <br>
- <footer>
-     <small>
-     <div class = "container text-center" >
-         <div class = "row">
-         <div class = "col text-light footer_font">
-             Social Media<br>
-             <h3 style = "padding-top: 10;"><a style = "text-decoration: none; color: white" href = "https://www.instagram.com/umaicookies.nola/" target="_blank"><i class="bi bi-instagram"></i> instagram </h3></a>
-         </div>
+    <br>
+    <footer>
+        <small>
+        <div class = "container text-center" >
+            <div class = "row">
+            <div class = "col text-light footer_font">
+                Social Media<br>
+                <h3 style = "padding-top: 10;"><a style = "text-decoration: none; color: white" href = "https://www.instagram.com/umaicookies.nola/" target="_blank"><i class="bi bi-instagram"></i> instagram </h3></a>
+            </div>
 
-         <div class = "col text-light footer_font">
-             Hours<br>
-             <h6 style = "display: block; padding-top: 10;" class = "font_bold">Monday Closed</6>
-             <h6 style = "display: block;" class = "font_bold">Tuesday Closed</h6>
-             <h6 style = "display: block;" class = "font_bold">Wednesday Closed</h6>
-             <h6 style = "display: block;" class = "font_bold">Thursday Closed</h6>
-             <h6 style = "display: block;" class = "font_bold">Friday Closed</h6>
-             <h6 style = "display: block;" class = "font_bold">Saturday 3:00 pm - 6:00 pm</h6>
-             <h6 style = "display: block;" class = "font_bold">Sunday 3:00 pm - 6:00 pm</h6>
-         </div>
+            <div class = "col text-light footer_font">
+                Hours<br>
+                <h6 style = "display: block; padding-top: 10;" class = "font_bold">Monday Closed</6>
+                <h6 style = "display: block;" class = "font_bold">Tuesday Closed</h6>
+                <h6 style = "display: block;" class = "font_bold">Wednesday Closed</h6>
+                <h6 style = "display: block;" class = "font_bold">Thursday Closed</h6>
+                <h6 style = "display: block;" class = "font_bold">Friday Closed</h6>
+                <h6 style = "display: block;" class = "font_bold">Saturday 3:00 pm - 6:00 pm</h6>
+                <h6 style = "display: block;" class = "font_bold">Sunday 3:00 pm - 6:00 pm</h6>
+            </div>
 
-         <div class = "col text-light footer_font">
-             Location <br>  
-                 <h6 style = "display: block; padding-top: 10;" class = "font_bold"><a class = "text-light" style = "text-decoration: none;" href = "#location">ADDRESS</a></h6>
-         </div>
+            <div class = "col text-light footer_font">
+                Location <br>  
+                    <h6 style = "display: block; padding-top: 10;" class = "font_bold"><a class = "text-light" style = "text-decoration: none;" href = "#location">ADDRESS</a></h6>
+            </div>
 
-         <div class = "col text-light footer_font">
-             More Info<br>  
-                 <h6 style = "display: block; padding-top: 10;" class = "font_bold"><a class = "text-light" style = "text-decoration: none;" href = "#about">ABOUT</a></h6>
-                 <h6 style = "display: block; padding-top: 10;" class = "font_bold"><a class = "text-light" style = "text-decoration: none;" href = "#contact">CONTACT</a></h6>
-                 <h6 style = "display: block; padding-top: 10;" class = "font_bold"><a class = "text-light" style = "text-decoration: none;" href = #faq>FAQ</a></h6>      
-                 <h6 style = "display: block; padding-top: 10;" class = "font_bold"><a class = "text-light" style = "text-decoration: none;" href = #donation>DONATE</a></h6>      
-         </div>
-     </div>
- </div>
- </small>
+            <div class = "col text-light footer_font">
+                More Info<br>  
+                    <h6 style = "display: block; padding-top: 10;" class = "font_bold"><a class = "text-light" style = "text-decoration: none;" href = "#about">ABOUT</a></h6>
+                    <h6 style = "display: block; padding-top: 10;" class = "font_bold"><a class = "text-light" style = "text-decoration: none;" href = "#contact">CONTACT</a></h6>
+                    <h6 style = "display: block; padding-top: 10;" class = "font_bold"><a class = "text-light" style = "text-decoration: none;" href = #faq>FAQ</a></h6>      
+                    <h6 style = "display: block; padding-top: 10;" class = "font_bold"><a class = "text-light" style = "text-decoration: none;" href = #donation>DONATE</a></h6>      
+            </div>
+        </div>
+    </div>
+    </small>
 </footer>
-    <script src = "scripts/button_donation.js"></script>
-    <script src = "scripts/disable_submit_button_form.js"></script>
-    <script src = "scripts/animate.js"></script>
-    <script src = https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js></script> 
-    <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src = "scripts/form-model.js" ></script>
-    <script src = "scripts/form-controller.js" ></script>
- </body>  
+       <script src = "shoppingcart.js"></script>
+       <script src = "../scripts/button_donation.js"></script>
+       <script src = "../scripts/disable_submit_button_form.js"></script>
+       <script src = "../scripts/animate.js"></script>
+       <script src = https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js></script> 
+       <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+       <script src = "../scripts/form-model.js" ></script>
+       <script src = "../scripts/form-controller.js" ></script>
+    </body>  
 
 </html>

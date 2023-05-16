@@ -52,10 +52,33 @@
                         <li class="nav-item dropdown">
                             <a style = "display: inline;"class="nav-link font_bold text-dark highlight dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id = "dropdown-menu" href="#"> <i class="bi bi-cart"></i></a>
                             <ul class="dropdown-menu dropdown-menu-right end-0" aria-labelledby="dropdownMenuLink">
-                                <li><a class="dropdown-item highlight" href = "#">YOUR CART</a></li>
+                                <li><a style = "font-weight: bold;" class="dropdown-item highlight" href = "#">YOUR CART</a></li>
+                                <br>
+                                <div class = "container text-center">
+                                    <div class = "row"  style = "padding-bottom:10">
+                                        <li id = "product" class = "col font_bold"></li>
+                                    </div>
+                                </div>
+
+                                    <li id = "total" class = "col font_bold" style = "text-align: right;"></li>
+                                    <br>
+                                    <button class = "button-background button_donation float-end font_bold" style = "border-radius: 30%; border: none; padding: 10"><a style = "text-decoration: none !important; color: white"href = "#">CHECKOUT</a></button>
+                                    <hr>
+    <div style = "text-align: right;" class = "container-sm">
+        <br>
+        <span class="dc_payment_icons_mini_43 dc_visa2_mini" title="Visa"></span>
+        <span class="dc_payment_icons_mini_43 dc_mastercard2_mini" title="Mastercard"></span>
+        <span class="dc_payment_icons_mini_43 dc_amex2_mini" title="American Express"></span>
+        <span class="dc_payment_icons_mini_43 dc_discover2_mini" title="Discover"></span>
+        <span class="dc_payment_icons_mini_43 dc_electron2_mini" title="Visa Electron"></span>
+        <span class="dc_payment_icons_mini_43 dc_cirrus2_mini" title="Cirrus"></span>
+        <span class="dc_payment_icons_mini_43 dc_ccv2_mini" title="CCV"></span>
+        <span class="dc_payment_icons_mini_43 dc_paypal2_mini" title="PayPal"></span>
+        <span class="dc_payment_icons_mini_43 dc_amazon2_mini" title="Amazon Payments"></span>
+        <span class="dc_payment_icons_mini_43 dc_googleckout2_mini" title="Google Checkout"></span>
+    </div>
                             </ul>
                         </li>
-                       
                         
                     </ul>
 
@@ -83,45 +106,59 @@
             <div class = "row">
             <div class = "col text-center">
                 <div class = "card text-center col" style = "border:none">
-                    <div class = "card-block zoom">
-                    <img style = "max-width: 100%;"src = "assets/cookie_1.png" width="200" height="200">
-                    <h2 class = "card-title mt-2 font_bold"> Dark Chocolate Toffee </h2>
+                    <div class = "card-block">
+                    <img class = "zoom" style = "max-width: 100%;"src = "assets/cookie_1.png" width="200" height="200"><br>
+                    <h2 class = "card-title mt-2 font_bold"> Dark Chocolate Toffee </h2><br>
+                    <button onclick =  "addItemToCart(1); addHTMLProduct1(); calculateTotal();" style = "border-radius: 30%; border: none; padding: 10" class = "font_heavy_small button button-order-background"> <span> order </span> </button>
                 </div></div></div>  
 
             <div class = "col text-center">
                 <div class = "card text-center col" style = "border:none">
-                    <div class = "card-block zoom">
-                    <img style = "max-width: 100%;" src = "assets/cookie_4.png" width="200" height="200">
-                    <h2 class = "card-title mt-2 font_bold"> Black and White Sesame </h2>
+                    <div class = "card-block">
+                    <img class = "zoom" style = "max-width: 100%;" src = "assets/cookie_4.png" width="200" height="200"><br>
+                    <h2 class = "card-title mt-2 font_bold"> Black and White Sesame </h2><br>
+                    <button onclick = "addItemToCart(2); addHTMLProduct2(); calculateTotal();" style = "border-radius: 30%; border: none; padding: 10" class = "font_heavy_small button button-order-background"> <span> order </span> </button>
                 </div></div> </div> 
         </div>
+
+
+    
     </div>
 
     </section>
 
     <br><br>
 
-    <section id = "lactation"> 
+    <section id = "lactation" class = "text-center"> 
         <br><br><br><br>
-        <div class = "centered">  
+        <div class = "container-sm">
             <h1 class = "font_bold">Lactation Cookies</h1> <br>
-            <video width="200" height="180" preload controls>
-                <source src="assets/umai_vid.mov" type="video/mp4">
-            </video>
+            <h5 class = "font_bold">TT Cookies™ are lactation cookies formulated to assist nursing mothers with breastmilk production!* They contain rolled oats, ground flaxseed, and brewer's yeast, which contain certain galactagogues that can help increase milk production. They're also safe for the whole family to eat and are a great healthier alternative to a tasty treat!</h5>
+            <br>
+            <h5 class = "font_bold" style = "display: inline;"> Available by the dozen as </h5> <h6 style = "display: inline;" class = "font_heavy_howto"> frozen cookie dough balls </h6> <h5 class = "font_bold" style = "display: inline;"> or </h5> <h6 style = "display: inline;" class = "font_heavy_howto"> pre-baked cookies </h6>.  <h5 class = "font_bold" style = "display: inline;"></h5> <h5 class = "font_bold" style = "display: inline;"> All frozen cookie dough will be packaged in resealable, freezer-safe bags and will include complementary parchment paper (one sheet per dozen) and a sachet of flaky sea salt for finishing.</h5><br>
+            <br> 
+            <h5 class = "font_bold" style = "display: inline;"> Local delivery is available on Tuesdays and Wednesdays for</h5><h6 style = "display: inline;" class = "font_heavy_howto"> frozen dough </h6> <h5 class = "font_bold" style = "display: inline;"> to the New Orleans and Baton Rouge metro areas.</h5>
+            <br> <br>
+            <h6 class = "font_heavy_howto">Please mention any allergies you or your child may have. Contains dairy, gluten, and eggs.</h6>
+            <br><br><br>
+            </div>
+
             <div class = "container text-center">
                 <div class = "row">
                 <div class = "col text-center">
                     <div class = "card text-center col" style = "border:none">
-                        <div class = "card-block zoom">
-                        <img style = "max-width: 100%;"src = "assets/cookie_2.png" width="200" height="200">
-                        <h2 class = "card-title mt-2 font_bold"> TT Cookies - Milk Chocolate </h2>
+                        <div class = "card-block">
+                        <img class = "zoom" style = "max-width: 100%;"src = "assets/cookie_2.png" width="200" height="200"><br>
+                        <h2 class = "card-title mt-2 font_bold"> TT Cookies - Milk Chocolate </h2><br>
+                        <button onclick =  "addItemToCart(3); addHTMLProduct3(); calculateTotal();" style = "border-radius: 30%; border: none; padding: 10" class = "font_heavy_small button button-order-background"> <span> order </span> </button>
                     </div></div></div>  
     
                 <div class = "col text-center">
                     <div class = "card text-center col" style = "border:none">
-                        <div class = "card-block zoom">
-                        <img style = "max-width: 100%;" src = "assets/cookie_3.png" width="200" height="200">
-                        <h2 class = "card-title mt-2 font_bold">  TT Cookies - Dark Chocolate Toffee </h2>
+                        <div class = "card-block">
+                        <img class = "zoom" style = "max-width: 100%;" src = "assets/cookie_3.png" width="200" height="200"><br>
+                        <h2 class = "card-title mt-2 font_bold">  TT Cookies - Dark Chocolate Toffee </h2><br>
+                        <button onclick =  "addItemToCart(4); addHTMLProduct4(); calculateTotal();" style = "border-radius: 30%; border: none; padding: 10" class = "font_heavy_small button button-order-background"> <span> order </span> </button>
                     </div></div> </div> 
             </div>
         </div>
@@ -384,6 +421,7 @@
     </div>
     </small>
 </footer>
+       <script src = "scripts/shoppingcart.js"></script>
        <script src = "scripts/button_donation.js"></script>
        <script src = "scripts/disable_submit_button_form.js"></script>
        <script src = "scripts/animate.js"></script>

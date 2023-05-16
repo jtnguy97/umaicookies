@@ -1,0 +1,31 @@
+[
+	{
+		"id": 1,
+		"image": "cookie_1.png",
+		"name": "Dark Chocolate Toffee",
+		"price": "18.00",
+		"quantity": 1
+	},
+	{
+		"id": 2,
+		"image": "cookie_4.png",
+		"name": "Black and White Sesame",
+		"price": "18.00",
+		"quantity": 1
+	},
+
+    {
+		"id": 3,
+		"image": "cookie_2.png",
+		"name": "TT Cookies - Milk Chocolate",
+		"price": "22.00",
+		"quantity": 1
+	},
+	{
+		"id": 4,
+		"image": "cookie_3.png",
+		"name": "TT Cookies - Dark Chocolate Toffee",
+		"price": "22.00",
+		"quantity": 1
+	}
+]
