@@ -34,7 +34,6 @@ function addItemToCart(productId){
  //removeItemFromCart(1);
 
 
-
  function updateQuantity(productId, quantity){
     for(let product of cart){
        if(product.id == productId){
@@ -86,12 +85,51 @@ function addItemToCart(productId){
  function subtractLactation(){
    total_lactation -= 1.00;
  }
+ 
+ var donation = new Number(0.00);
+
+ function donate10(){
+   donation += 10
+   document.getElementById("product").innerHTML+=`<div class = "text-center"><h6 class = "col font_bold" > Donation - $ 10.00</h6><button onclick = "this.parentNode.remove(); subtractDonation10(); calculateTotal();"style = "border: none; background-color: white;"><i class="bi bi-trash"></i></button><br><br><div>`
+ }
+
+ function donate20(){
+   donation += 20
+   document.getElementById("product").innerHTML+=`<div class = "text-center"><h6 class = "col font_bold" > Donation - $ 20.00</h6><button onclick = "this.parentNode.remove(); subtractDonation20(); calculateTotal();"style = "border: none; background-color: white;"><i class="bi bi-trash"></i></button><br><br><div>`
+ }
+
+ function donate50(){
+   donation += 50
+   document.getElementById("product").innerHTML+=`<div class = "text-center"><h6 class = "col font_bold" > Donation - $ 50.00</h6><button onclick = "this.parentNode.remove(); subtractDonation50(); calculateTotal();"style = "border: none; background-color: white;"><i class="bi bi-trash"></i></button><br><br><div>`
+ }
+
+ 
+ function donate100(){
+   donation += 100
+   document.getElementById("product").innerHTML+=`<div class = "text-center"><h6 class = "col font_bold" > Donation - $ 100.00</h6><button onclick = "this.parentNode.remove(); subtractDonation100(); calculateTotal();"style = "border: none; background-color: white;"><i class="bi bi-trash"></i></button><br><br><div>`
+ }
+
+ function subtractDonation10(){
+   donation -=10
+ }
 
 
+ function subtractDonation20(){
+   donation -=20
+ }
+
+ function subtractDonation50(){
+   donation -=50
+ }
+
+ function subtractDonation100(){
+   donation -=100
+ }
+ 
  function calculateTotal(){
    let total_lactation_price = (total_lactation * lactation_price) 
    let total_homemade_price = (total_homemade * homemade_price) 
-   var full_price = new Number(total_lactation_price+total_homemade_price);
+   var full_price = new Number(total_lactation_price+total_homemade_price+donation);
    document.getElementById("total").innerHTML = `TOTAL:&emsp; $${full_price}.00&emsp;`;
  }
 

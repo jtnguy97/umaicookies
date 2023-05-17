@@ -62,7 +62,7 @@
 
                                     <li id = "total" class = "col font_bold" style = "text-align: right;"></li>
                                     <br>
-                                    <button class = "button-background button_donation float-end font_bold" style = "border-radius: 30%; border: none; padding: 10"><a style = "text-decoration: none !important; color: white"href = "#">CHECKOUT</a></button>
+                                    <button class = "button-background button_donation float-end font_bold" style = "border-radius: 30%; border: none; padding: 10"><a style = "text-decoration: none !important; color: white"href = "#">CHECKOUT</a></button>     
                                     <hr>
     <div style = "text-align: right;" class = "container-sm">
         <br>
@@ -361,10 +361,10 @@
             <br><br>
             <h3 class = "font_heavy_howto container-sm" style = "font-size: 20; padding-left: 50;">Donation amount: </h3>
         <div class = "font_heavy container-sm" style = "text-align: left; padding-left: 50;">
-            <button class = "button-background button_donation" style = "border-radius: 30%; border: none; padding: 10">$10.00</button>
-            <button class = "button-background button_donation" style = "border-radius: 30%; border: none; padding: 10">$20.00</button>
-            <button class = "button-background button_donation" style = "border-radius: 30%; border: none; padding: 10">$50.00</button>
-            <button class = "button-background button_donation" style = "border-radius: 30%; border: none; padding: 10">$100.00</button>
+            <button onclick = "donate10(); calculateTotal();" class = "button-background button_donation" style = "border-radius: 30%; border: none; padding: 10">$10.00</button>
+            <button onclick = "donate20(); calculateTotal();" class = "button-background button_donation" style = "border-radius: 30%; border: none; padding: 10">$20.00</button>
+            <button onclick = "donate50(); calculateTotal();" class = "button-background button_donation" style = "border-radius: 30%; border: none; padding: 10">$50.00</button>
+            <button onclick = "donate100(); calculateTotal();" class = "button-background button_donation" style = "border-radius: 30%; border: none; padding: 10">$100.00</button>
         </div> 
         <br><br><br>
     </section>
